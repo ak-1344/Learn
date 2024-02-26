@@ -1,0 +1,45 @@
+HTML is the basic structure of our website, CSS is the decoration of our webpage and JS is the backend and working of our website.
+'!' help you to load essential code for html in vs code.
+HTML is not case sensitive.
+
+HTML tags: It is a container for some content or other HTML tags.....
+
+<p> : paragraph opening tag.  </p> : paragraph closing tag.
+and the content will be written between these two tags.
+
+<head> </head> in these tags, whatever is written is not displayed on the webpage. We can give title to our html in head tag or define responsiveness in meta tags. 
+<title> </title> tag give a title to our html. this is commonly used inside head tags.
+
+<body> </body> tag contain all the data ie. to be shown on our webpage.
+<html> </html> is the parent tag of head and body tag.
+
+Most of the tags in html are having opening and closing tags.
+Some tags don't have any content in between.
+ 
+<br> : New line tag. (Not closing tag required.)
+<!--This is an Html comment -->
+
+Html attributes:
+<html lang="en"> The content written aside of html in tag is attribute to the tag.
+
+Heading tags: <h1> to <h6> ie. Most important to least important.
+
+Anchor tag: <a href="www.youtube.com">Youtube</a> #Add link to our webpage.
+The anchor tag can also go to our directory link, like we can add a link to openloacal file from our webpage. #Absolute link and relative link.#
+
+Image tag: <img src="/image.png" alt="random image"> #Absolute url (web url) or relative url(Local directory link). alt attribute in this tag help us to provide info about image when it is not loaded on user's PC due to any issue.
+We can also use gheight attribute to resize our image.
+<img src="/image.png" alt="random image" height="100" width="50">
+It is preferred to use only one sizing attribute at a time.
+
+<b> Bold </b> 
+<i> Italic </i>
+<u> Underline </u>
+<big> Big text </big>
+<small> Small Text </small>
+<sub> Subscript </sub> <!--Lower small-->
+<sup> Superscript </sup> <!--Upper small-->
+<pre> In these tags, all the spaces and next tine characters are not auto formatted. </pre>
+<hr> Put a horizontal ruler in between
+
+
