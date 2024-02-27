@@ -42,4 +42,78 @@ It is preferred to use only one sizing attribute at a time.
 <pre> In these tags, all the spaces and next tine characters are not auto formatted. </pre>
 <hr> Put a horizontal ruler in between
 
+Semantic tags : Works defined within name
+Non-semantic : Work not defined within name.
+Semantic tag are preferred to use, for good user experience and etc.....
+For better pop up of your webpage, google search engine read your html file that help your webpage to reach the target audience by letting google understand your content more efficiently...
 
+<header> <main> <footer>
+Inside main tag:
+<section> (Section tag) For a section on your page.
+<article> (Article tag) For an article on your page.
+<aside> (Aside tag) For content aside main content (ads).
+
+anchor tag: <a href="https://www.google.com" target="_main">Google</a>
+This anchor tag will open the give web adress in new website.
+
+Div tag:
+It is a container for other html tags (Non smenatic tag)
+Block element 
+
+#Block element: Takes full width
+#Inline elements: Takes width as per size
+
+List of Block Tags:
+<adress>	<article>	<aside>
+<blockquote>	<canvas>	<dd>
+<div>		<dl>		<dt>
+<fieldset>	<figcaption>	<figure>
+<footer>	<form>		<h1>-<h6>
+<header>	<hr>		<li>
+<main>		<nav>		<noscript>
+<ol>		<p>		<pre>
+<section>	<table>		<tfoot>
+<ul>		<video>
+
+
+Span Tag:
+It is also a container used for other html elements.
+Inline element.
+
+List of Span Tags (inline elements):
+<a>	<abbr>		<acronym>
+<b>	<bdo>		<big>
+<br>	 <button>	<cite>
+<code>	 <dfn>		<em>
+<i>	 <img>		<input>
+<kbd>	 <label>	<map>
+<object> <tt>		<var>
+<output> <q>		<samp>
+<script> <select>	<small>
+<span>	 <strong>	<sub>
+<sup>	 <textarea>	<time>
+
+List in html:
+Two type of list: Unordered(Bullet Points) and Ordered (Numbering)
+Unordered: <ul> <li>Apple</li> <li>Mango</li> </ul>
+Ordered:   <ol> <li>Apple</li> <li>Mango</li> </ol>
+We can even create sublist inside the lists. By the same method.
+The style of buleet point and numbering can be changed and that information can be gathered from MDN refrences... (MDN reference can be found if any tag is selected in VS Code.)
+
+Tables in HTML:
+<tr> Used to display table row.
+<td> used to display table data.
+<th> used to display table header.
+
+eg.
+<table>
+<tr> <th> Name </th>     <th> Roll No. </th>  </tr>
+<tr> <td> Aditya </td>   <td> 23BCE1344 </td> </tr>
+</table>
+
+Caption in table:
+We just have to add a caption tag just after table tag, to give a heading to our table.
+<thead> To wrap table head
+<tbody> To wrap Table body
+
+<colspan>="n" (used to create cells which spans iver multiple columns)
