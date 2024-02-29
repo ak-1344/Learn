@@ -33,14 +33,38 @@ We can also use gheight attribute to resize our image.
 It is preferred to use only one sizing attribute at a time.
 
 <b> Bold </b> 
-<i> Italic </i>
+<i> Italic </i> <cite> </cite> <em> </em>
 <u> Underline </u>
 <big> Big text </big>
 <small> Small Text </small>
+<mark> Highlight text </mark>
+<del> Overcut strikeout </del>
+<ins> Inserted </ins> <-- Kind of underlined-->
 <sub> Subscript </sub> <!--Lower small-->
 <sup> Superscript </sup> <!--Upper small-->
 <pre> In these tags, all the spaces and next tine characters are not auto formatted. </pre>
 <hr> Put a horizontal ruler in between
+
+<blockquote cite="URL"> Content from the given URL site </blockquote> <!--Used not to get copyright strike on our site-->
+<q> Content inside this tag will be double quoted. </q>
+<abbr title="Hyper Text Markup Language"> HTML </abbr> <!--Used to show the abbrevation of any word as a popup-->
+<adress> Evrything written in it will act like pre tag and will be in italic form. Commonly used to write adrss </address>
+<bdo dir="rtl"> If browser supprots, this text will be written right to left </bdo>
+
+To change background color or any style in html, style is used inside other tags:
+<h1 style="background-color:DodgerBlue;"> Hello World </h1>
+<p style="backgrond-color:Tomato;">Lorem ...... </p>
+Background color:style="background-color:*color-name*;"
+Font color: 	 style="color:*color-name*;"
+Border color:	 style="border:2px(*size*) solid *color-name*;"
+
+Color can also be called with RGB,HEX,HSL,RGBA or HSLA values..
+"background-color:rgb(255,99,71);"
+"background-color:#ff6347;"
+"background-color:hsl(9,100%,64%);"
+"background-color:rgba(255,99,71,0.5);"
+"background-color:hsla(9,100%,64%,0.5);"
+
 
 Semantic tags : Works defined within name
 Non-semantic : Work not defined within name.
