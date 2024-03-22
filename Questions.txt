@@ -1,0 +1,112 @@
+1.       Create a class named 'Student' with a string variable 'name' and an integer variable 'roll_no'. Assign the value of roll_no as '2' and that of name as "John" by creating an object of the class Student.
+
+2.       Assign and print the roll number, phone number and address of two students having names "Sam" and "John" respectively by creating two objects of the class 'Student'.
+
+3.       Write a program to print the area and perimeter of a triangle having sides of 3, 4 and 5 units by creating a class named 'Triangle' with a function to print the area and perimeter.
+
+4.       Write a program to print the area and perimeter of a triangle having sides of 3, 4 and 5 units by creating a class named 'Triangle' with the constructor having the three sides as its parameters.
+
+5.     Write a program to print the area of two rectangles having sides (4,5) and (5,8) respectively by creating a class named 'Rectangle' with a function named 'Area' which returns the area. Length and breadth are passed as parameters to its constructor.
+
+6.       Write a program to print the area of a rectangle by creating a class named 'Area' having two functions. First function named as 'setDim' takes the length and breadth of the rectangle as parameters and the second function named as 'getArea' returns the area of the rectangle. Length and breadth of the rectangle are entered through keyboard.
+
+7.       Write a program to print the area of a rectangle by creating a class named 'Area' taking the values of its length and breadth as parameters of its constructor and having a function named 'returnArea' which returns the area of the rectangle. Length and breadth of the rectangle are entered through keyboard.
+
+8.        Print the average of three numbers entered by the user by creating a class named 'Average' having a function to calculate and print the average without creating any object of the Average class.
+
+9.        Print the sum, difference and product of two complex numbers by creating a class named 'Complex' with separate functions for each operation whose real and imaginary parts are entered by the user.
+
+10.    Write a program to print the volume of a box by creating a class named 'Volume' with an initialization list to initialize its length, breadth and height. (just to make you familiar with initialization lists)
+
+11.    Write a program that would print the information (name, year of joining, salary, address) of three employees by creating a class named 'Employee'. The output should be as follows:
+Name        Year of joining        Address
+Robert        1994        64C- WallsStreat
+Sam        2000        68D- WallsStreat
+John        1999        26B- WallsStreat
+
+12.    Add two distances in inch-feet by creating a class named 'AddDistance'.
+
+13.   Write a program by creating an 'Employee' class having the following functions and print the final salary.
+1 - 'getInfo()' which takes the salary, number of hours of work per day of employee as parameters
+2 - 'AddSal()' which adds $10 to the salary of the employee if it is less than $500.
+3 - 'AddWork()' which adds $5 to the salary of the employee if the number of hours of work per day is more than 6 hours.
+
+14.   Create a class called 'Matrix' containing constructor that initializes the number of rows and the number of columns of a new Matrix object. The Matrix class has the following information:
+1 - number of rows of matrix
+2 - number of columns of matrix
+3 - elements of matrix (You can use 2D vector)
+The Matrix class has functions for each of the following:
+1 - get the number of rows
+2 - get the number of columns
+3 - set the elements of the matrix at a given position (i,j)
+4 - adding two matrices.
+5 - multiplying the two matrices
+You can assume that the dimensions are correct for the multiplication and addition.
+
+15.  Write a program to print the name, salary and date of joining of 10 employees in a company. Use array of objects.
+
+16.  Write a program to print the roll number and average marks of 8 students in three subjects (each out of 100). The marks are entered by the user and the roll numbers are automatically assigned.
+
+17.  Write a program to calculate the average height of all the students of a class. The number of students and their heights are entered by the user.
+
+18.  Lets create a bank account. Create a class named 'BankAccount' with the following data members
+1 - Name of depositor
+2 - Address of depositor
+3 - Type of account
+4 - Balance in account
+5 - Number of transactions
+Class 'BankAccount' has a function for each of the following
+1 - Generate a unique account number for each depositor
+For the first depositor, account number will be BA1000, for the second depositor it will be BA1001 and so on
+2 - Display information and balance of depositor
+3 - Deposit more amount in the balance of any depositor
+4 - Withdraw some amount from the balance deposited
+5 - Change the address of depositor
+After creating the class, do the following operations
+1 - Enter the information (name, address, type of account, balance) of the depositors. Number of depositors are to be entered by the user.
+2 - Print the information of any depositor.
+3 - Add some amount to the account of any depositor and then display the final information of that depositor
+4 - Remove some amount from the account of any depositor and then display the final information of that depositor
+5 - Change the address of any depositor and then display the final information of that depositor
+6 - Randomly repeat these processes for some other bank accounts and after that print the total number of transactions.
+
+19.  Write a program to create a directory that contains the following information.
+
+(a) Name of a person
+(b) Address
+(c) Telephone Number (if available with STD code)
+(d) Mobile Number (if available)
+(e) Head of the family
+
+20.       Write a program to print the names of students by creating a Student class. If no name is passed while creating an object of the Student class, then the name should be "Unknown", otherwise the name should be equal to the String value passed while creating the object of the Student class.
+
+21.       Create a class named 'Rectangle' with two data members- length and breadth and a function to calculate the area which is 'length*breadth'. The class has three constructors which are :
+1 - having no parameter - values of both length and breadth are assigned zero.
+2 - having two numbers as parameters - the two numbers are assigned as length and breadth respectively.
+3 - having one number as parameter - both length and breadth are assigned that number.
+Now, create objects of the 'Rectangle' class having none, one and two parameters and print their areas.
+
+22.       Suppose you have a Piggie Bank with an initial amount of $50 and you have to add some more amount to it. Create a class 'AddAmount' with a data member named 'amount' with an initial value of $50. Now make two constructors of this class as follows:
+1 - without any parameter - no amount will be added to the Piggie Bank
+2 - having a parameter which is the amount that will be added to the Piggie Bank
+Create an object of the 'AddAmount' class and display the final amount in the Piggie
+
+23.     Bank.Create a class named 'Programming'. While creating an object of the class, if nothing is passed to it, then the message "I love programming languages" should be printed. If some String is passed to it, then in place of "programming languages" the name of that String variable should be printed.
+For example, while creating the object if we pass "cpp", then "I love cpp" should be printed
+
+24.       Create a class named 'PrintNumber' to print various numbers of different datatypes by creating different functions with the same name 'printn' having a parameter for each datatype.
+
+25.        Create a class to print an integer and a character using two functions having the same name but different sequence of the integer and the character parameters.
+For example, if the parameters of the first function are of the form (int n, char c), then that of the second function will be of the form (char c, int n).
+
+26.       Create a class to print the area of a square and a rectangle. The class has two functions with the same name but different number of parameters. The function for printing the area of rectangle has two parameters which are its length and breadth respectively while the other function for printing the area of square has one parameter which is the side of the square.27
+
+27. Create a class 'Student' with three data members which are name, age and address. The constructor of the class assigns default values to name as "unknown", age as '0' and address as "not available". It has two functions with the same name 'setInfo'. First function has two parameters for name and age and assigns the same whereas the second function takes has three parameters which are assigned to name, age and address respectively. Print the name, age and address of 10 students.
+Hint - Use array of objects
+
+28.       Create a class 'Degree' having a function 'getDegree' that prints "I got a degree". It has two subclasses namely 'Undergraduate' and 'Postgraduate' each having a function with the same name that prints "I am an Undergraduate" and "I am a Postgraduate" respectively. Call the function by creating an object of each of the three classes.
+
+29.    A boy has his money deposited $1000, $1500 and $2000 in banks-Bank A, Bank B and Bank C respectively. We have to print the money deposited by him in a particular bank.
+Create a class 'Bank' with a function 'getBalance' which returns 0. Make its three subclasses named 'BankA', 'BankB' and 'BankC' with a function with the same name 'getBalance' which returns the amount deposited in that particular bank. Call the function 'getBalance' by the object of each of the three banks.
+
+30.    A class has an integer data member 'i' and a function named 'printNum' to print the value of 'i'. Its subclass also has an integer data member 'j' and a function named 'printNum' to print the value of 'j'. Make an object of the subclass and use it to assign a value to 'i' and to 'j'. Now call the function 'printNum' by this object.
