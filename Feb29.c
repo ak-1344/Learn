@@ -11,10 +11,10 @@
     emp input(){
         emp a;
         printf("Enter Employee Id, name, age, Mobile number and address respectively and please press enter after each value entered:\n");
-        scanf("%d\n",&a.id);
+        scanf("%d",&a.id);
         gets(a.name);
-        scanf("%d\n",&a.age);
-        scanf("%lld\n",&a.mob_no);
+        scanf("%d",&a.age);
+        scanf("%lld",&a.mob_no);
         gets(a.address);
         return a;
     }
@@ -56,7 +56,7 @@
         scanf("%d",&n);
         emp arr[n];
         for(int i=0;i<n;i++){
-            printf("%d",i+1);
+            printf("Enter the details of %d employee:\n",i+1);
             arr[i]=input();
         }
         printf("Do you want to search any entered employee:\n 1 for YES\n0 for NO\n");
@@ -69,7 +69,7 @@
             case 1:
                 printf("Enter the name of the employee: ");
                 char name[50];
-                scanf("\n");
+                getchar();
                 gets(name);
                 byname(arr,name);
                 break;
