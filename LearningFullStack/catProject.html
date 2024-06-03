@@ -5,6 +5,7 @@
     <title>
         CatPhotoApp
     </title>
+    <link rel="stylesheet" href="catProject.css">
 </head>
 <main>
     <h1>CatPhotoApp</h1>
@@ -21,7 +22,7 @@
     <section>
         <h2>Cat Lists</h2>
         <h3>Things cat love:</h3>
-        <ul>
+        <ul class="list">
             <li>cat nip</li>
             <li>laser pointers</li>
             <li>lasagna</li>
@@ -34,7 +35,7 @@
 
     <section>
         <h2>Top 3 things cats hate:</h2>
-        <ol>
+        <ol class="list">
             <li>flea treatment</li>
             <li>thunder</li>
             <li>other cats</li>
@@ -46,10 +47,10 @@
         </figure>
     </section>
 
-    <section>
+    <section id="form">
         <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
-            <fieldset>
+            <fieldset id="box1">
                 <legend>Is your can an indoor or outdoor cat?</legend>
                 <input checked id="indoor" type="radio" name="Indoor-Outdoor" value="indoor"><label
                     for="indoor">Indoor</label>
@@ -57,7 +58,7 @@
                     for="outdoor">Outdoor</label>
             </fieldset>
 
-            <fieldset>
+            <fieldset id="box2">
                 <legend>What's your cat's personality?</legend>
                 <input checked id="loving" type="checkbox" name="personality" value="loving">
                 <label for="loving">Loving</label>
@@ -75,4 +76,5 @@
 <footer>
     <p>No Copyright - <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a></p>
 </footer>
+
 </html>
