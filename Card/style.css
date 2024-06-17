@@ -1,0 +1,50 @@
+.container{
+    border: solid grey 1px;
+    max-width: 35vw;
+    min-height: 100%;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 10px;
+}
+img{
+    max-width: inherit;
+}
+
+.spans{
+    padding:8px;
+    padding-left: 15px;
+}
+span{
+    border: solid grey 1px;
+    border-radius: 30px;
+    padding: 0px 10px;
+    color: grey;
+}
+.content{
+    padding: 0px 10px;
+    color: grey;
+}
+
+h1{
+    color: black;
+}
+
+.but button{
+    border: none;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: rgba(0, 128, 255, 0.544);
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.but{
+    text-align: center;
+}
+
+button:hover{
+    border: solid black 2px;
+    cursor: pointer;
+}
