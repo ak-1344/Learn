@@ -2,7 +2,7 @@
     --primarybackground: #36DBE5;
     --secondarybackground: #249EE3;
     --textbackground: #9AEDF2;
-    --textcolor: #6D7979;
+    --textcolor: #676767;
     --headinfcolor: #364043;
 }
 
@@ -66,27 +66,34 @@ body{
 
 .calender{
     margin: 10% auto;
-    padding: 40px;
+    padding: 0px 20px 25px 20px;
     background-color: white;
-    border-radius: 20px;
-    max-width: 500px;
+    border-radius: 32px;
+    max-width: 320px;
     justify-content: center;
+    overflow: auto;
 }
 .heading-calender{
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 .month{
-    display:inline-block ;
-    padding-left: 30px;
+    display:flex ;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+padding-left: 10%;
 }
 .arrow{
     display: inline-block;
     text-align: right;
-    padding-left: 40%;
-    /* position: relative;
-    left: 170px; */
     cursor: pointer;
+    padding-right: 10%;
     a{
         text-decoration: none;
         color: black;
@@ -96,7 +103,6 @@ body{
     text-align:center ;
     justify-content: center;
     margin: auto;
-    padding-left: 25px;
     overflow: auto;
     /* display: grid ;
     grid-template-rows: repeat(7, 1fr);
@@ -105,59 +111,51 @@ body{
 .weekdays{
     display: inline-grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 32px;
-    justify-content: center;
-    align-content:start;
-    padding: 0px;
+    gap: 17px;
+    justify-content: left;
+    align-content:center;
+    padding: 10px;
     font-weight: bolder;
 }
 
 .buttons{
     /* padding: 10px 5px; */
     margin: 0;
-    
     /* width: 40px;
     height: 40px; */
     box-sizing:border-box;
     display: inline-grid ;
     grid-template-columns: repeat(7, 1fr);
     gap: 0px;
-    justify-content: center;
-    align-content: end;
+    justify-content: space-evenly;
+    align-content: center;
 }
 
 .buttons button{
     margin: 0;
-    background-color: white;
-    border: solid 1px var(--textcolor);
+    /* background-color: white; */
+    border: solid 1px #D5D4DF;
     border-radius: 50%;
     cursor: pointer;
-    width:55px;
-    height:55px;
-    
-    
+    width:40px;
+    height:40px;
 }
-.dates, .dates-faded{
-    padding: 20px 22px;
-}
-.dates-double{
-    padding: 20px 18.34px;
-}
+
 button.dates-faded {
     background-color: #e1e4f0;
-    color: var(--textcolor);
+    color: #A8A8A8;
 }
 
 .calender button:hover{
-    color: white;
-    background-color: var(--primarybackground);
+    background-color: white;
+    color: black;
 }
 
 .calender button:focus{
     background-color: orange;
     color: white;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 480px) {
     body{
         flex-direction: column;
     }
@@ -170,6 +168,6 @@ button.dates-faded {
     .box2{
         width: 100%;
         /*       */
-        overflow: scroll;
+        overflow: auto;
     }
 }
