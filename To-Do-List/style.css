@@ -3,25 +3,28 @@
     --secondarybackground: #249EE3;
     --textbackground: #9AEDF2;
     --textcolor: #676767;
-    --headinfcolor: #364043;
+    --headingcolor: #364043;
 }
 
 /* Font import */
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
 body{
     display:flex; 
     min-height: 100%;
     min-width: 100%;
+    margin: 0;
+    padding: 0;
+    /* transform: translateY(10vh) scaleY(120%); */
 }
 
 /* SideBar CSS */
 .sidebar{
     background-color: var(--primarybackground);
     width: 40%;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: 'Roboto';
 }
 .date{
     text-align: right;
@@ -29,20 +32,27 @@ body{
     width: 100%;
 }
 #date-in-box1{
-    display: inline-block;
-    font-size: 350%;
+    display: flex;
+    font-size: 80px;
     margin: 20px 0 0 20px;
     padding: 0px;
+    justify-content: end;
 }
-#date-months{
-    display: inline-block;
-    font-size:40% ;
+#date-months {
+    display: flex;
+    font-size: 34%;
+    padding-top: 1%;
     padding-right: 40px;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
 }
 .heading{
-    font-weight: bolder;
+    font-weight: 700;
     font-size: 120%;
-    color: var(--headinfcolor);
+    padding: 0;
+    margin: 0 0 0 20px;
+    color: var(--headingcolor);
     text-transform:uppercase;
 }
 
@@ -51,13 +61,16 @@ body{
     list-style: none;
     background-color: var(--textbackground);
     display: table;
-    margin: 8px;
-    padding: 3px;
-    border-radius: 10px;
+    margin: 7.32px 0px 0px -20px;
+    padding: 5px;
+    border-radius: 20px;
+    width: 95%;
+    max-width: 400px;
+    overflow-wrap: normal;
 }
 
 
-
+ 
 /* Calender CSS */
 .box2{
     background-color: var(--secondarybackground);
@@ -69,13 +82,14 @@ body{
     padding: 0px 20px 25px 20px;
     background-color: white;
     border-radius: 32px;
-    max-width: 320px;
+    max-width: 550px;
+    min-width: 350px;
     justify-content: center;
     overflow: auto;
 }
 .heading-calender{
-    font-weight: bolder;
-    font-size: x-large;
+    font-weight: 900;
+    font-size: xx-large;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -83,72 +97,80 @@ body{
 }
 .month{
     display:flex ;
+    font-family: 'Inter';
     flex-wrap: wrap;
     flex-direction: row;
     align-content: space-around;
     justify-content: space-around;
-padding-left: 10%;
+    padding-left: 10%;
 }
 .arrow{
-    display: inline-block;
+    display: flex;
     text-align: right;
+    justify-content: right;
     cursor: pointer;
-    padding-right: 10%;
     a{
         text-decoration: none;
         color: black;
     }
+    gap: 80px;
+    transform: scale(40%);
+    .first-arrow{
+        transform: rotate(0.5turn) translateY(4px);
+        color: #676767;
+        opacity: 50%;
+    }
 }
+
 .main-calender{
     text-align:center ;
     justify-content: center;
     margin: auto;
-    overflow: auto;
-    /* display: grid ;
-    grid-template-rows: repeat(7, 1fr);
-    gap: 0px; */
 }
 .weekdays{
-    display: inline-grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 17px;
-    justify-content: left;
-    align-content:center;
-    padding: 10px;
+    margin: 0;
+    padding-right: 0px;
     font-weight: bolder;
+    display: grid;
+    padding: 0px 9% 0px 12%;
+    grid-template-columns: repeat(7, 1fr);
 }
 
 .buttons{
-    /* padding: 10px 5px; */
     margin: 0;
-    /* width: 40px;
-    height: 40px; */
-    box-sizing:border-box;
-    display: inline-grid ;
+    transform: translate(8px);
+    padding: 0px 10%;
+    display: grid ;
     grid-template-columns: repeat(7, 1fr);
-    gap: 0px;
-    justify-content: space-evenly;
-    align-content: center;
+
 }
 
 .buttons button{
     margin: 0;
-    /* background-color: white; */
     border: solid 1px #D5D4DF;
     border-radius: 50%;
     cursor: pointer;
-    width:40px;
-    height:40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 62px;
+    max-height: 62px;
+    aspect-ratio: 1/1;
 }
 
+button.dates, button.dates-double{
+    background-color: white;
+}
 button.dates-faded {
     background-color: #e1e4f0;
     color: #A8A8A8;
 }
 
 .calender button:hover{
-    background-color: white;
-    color: black;
+    background-color: #5ED3EC;
+    color: white;
 }
 
 .calender button:focus{
