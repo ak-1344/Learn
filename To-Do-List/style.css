@@ -23,7 +23,8 @@ body{
 /* SideBar CSS */
 .sidebar{
     background-color: var(--primarybackground);
-    width: 40%;
+    min-width: 40%;
+    min-height: 100vh;
     font-family: 'Roboto';
 }
 .date{
@@ -74,11 +75,11 @@ body{
 /* Calender CSS */
 .box2{
     background-color: var(--secondarybackground);
-    width:60%;
+    min-width:60%;
 }
 
 .calender{
-    margin: 10% auto;
+    margin: 18% auto;
     padding: 0px 20px 25px 20px;
     background-color: white;
     border-radius: 32px;
