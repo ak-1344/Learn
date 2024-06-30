@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIn into CodeChef</title>
+    <link rel="icon" href="./Media/icon.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-
 
 <body
     class="bg-[url('./Media/Background.png')] bg-cover max-h-screen bg-no-repeat max-md:bg-[url(./Media/MobileBackground.png)]">
@@ -49,7 +48,7 @@
                         class="inline-block  scale-50 min-w-[10%]">
                     <input type="password" id="password" name="password" placeholder="********"
                         class="outline-none flex-grow" required>
-                    <img src="./Media/Eye.png" alt="eye logo"
+                    <img src="./Media/Eye.png" alt="eye logo" id="togglePassword"
                         class="inline-block max-w-full scale-50 cursor-pointer min-w-[10%]">
                 </div>
             </div>
@@ -66,11 +65,20 @@
         </form>
         <div class="flex justify-between">
             <div class="block -translate-x-16">Don't have an account?</div>
-            <a class="block translate-x-16 text-[#0963CD]"
-                href="./SignUpPage.html">Sign Up</a>
+            <a class="block translate-x-16 text-[#0963CD]" href="./SignUpPage.html">Sign Up</a>
         </div>
     </div>
+    <script>
+        // JavaScript to toggle password visibility
+        const togglePassword = document.getElementById('togglePassword');
+        const password = document.getElementById('password');
 
+        togglePassword.addEventListener('click', function () {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('opacity-50');
+        });
+    </script>
 </body>
 
 </html>

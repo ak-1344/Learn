@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up into CodeChef</title>
+    <link rel="icon" href="./Media/icon.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -28,12 +29,14 @@
                 <label class="font-bold" for="first-name">Name</label>
 
                 <div class="flex flex-row justify-between overflow-hidden">
-                    <input class="min-w-30 max-w-36 border border-black rounded-[8px] p-1 " type="text" id="first-name" name="first-name" placeholder="First Name">
+                    <input class="min-w-30 max-w-36 border border-black rounded-[8px] p-1 " type="text" id="first-name"
+                        name="first-name" placeholder="First Name" required>
 
-                    <input class="min-w-30 max-w-36 border border-black rounded-[8px] p-1 " type="text" id="last-name" name="last-name" placeholder="Last Name">
+                    <input class="min-w-30 max-w-36 border border-black rounded-[8px] p-1 " type="text" id="last-name"
+                        name="last-name" placeholder="Last Name" required>
                 </div>
             </div>
-            
+
             <div class="input-group block py-2">
                 <label for="email" class="font-bold">Email ID</label><br>
 
@@ -70,7 +73,7 @@
                         class="inline-block  scale-50 min-w-[10%]">
                     <input type="password" id="password" name="password" placeholder="********"
                         class="outline-none flex-grow" required>
-                    <img src="./Media/Eye.png" alt="eye logo"
+                    <img src="./Media/Eye.png" alt="eye logo" id="togglePassword"
                         class="inline-block max-w-full scale-50 cursor-pointer min-w-[10%]">
                 </div>
             </div>
@@ -80,20 +83,58 @@
                 <div class="min-w-80 border border-black border-solid rounded-[8px] flex align-baseline">
                     <img src="./Media/VectorPasswordLogo.png" alt="lock logo"
                         class="inline-block  scale-50 min-w-[10%]">
-                    <input type="password" id="password" name="password" placeholder="********"
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="********"
                         class="outline-none" required>
-                </div>
+                    </div>
+                    <p id="password-error" class="text-red-500 hidden">Passwords do not match.</p>
             </div>
-            <button type="submit"
-                class="flexbox justify-center bg-[#569CEE] text-[#F7FBFF] py-2 my-5 min-w-full text-2xl rounded-[43px]">Sign Up</button>
+            <button id="signup-btn" type="submit"
+                class="flexbox justify-center bg-[#569CEE] text-[#F7FBFF] py-2 my-5 min-w-full text-2xl rounded-[43px]">Sign
+                Up</button>
         </form>
         <div class="flex justify-between">
             <div class="block -translate-x-12
             ">Already have an account?</div>
-            <a class="block translate-x-12 text-[#0963CD]"
-                href="./LogInPage.html">Log In</a>
+            <a class="block translate-x-12 text-[#0963CD]" href="./index.html">Log In</a>
         </div>
     </div>
+
+
+
+    <!-- All this code of JavaScript is taken from ChatGPT! If have better idea, plz feel free to make change and initiate a pull request -->
+    <script>
+        // JavaScript to toggle password visibility for both fields
+        const togglePassword = document.getElementById('togglePassword');
+        const password = document.getElementById('password');
+        const confirmPassword = document.getElementById('confirm-password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            confirmPassword.setAttribute('type', type); // Sync visibility
+            this.classList.toggle('opacity-50');
+        });
+    </script>
+    <script>
+        // JavaScript to validate passwords and enable signup button
+        const passwordInput = document.getElementById('password');
+        const confirmPasswordInput = document.getElementById('confirm-password');
+        const passwordError = document.getElementById('password-error');
+        const signupBtn = document.getElementById('signup-btn');
+
+        confirmPasswordInput.addEventListener('input', function () {
+            const password = passwordInput.value;
+            const confirmPassword = confirmPasswordInput.value;
+
+            if (password === confirmPassword) {
+                passwordError.classList.add('hidden');
+                signupBtn.disabled = false;
+            } else {
+                passwordError.classList.remove('hidden');
+                signupBtn.disabled = true;
+            }
+        });
+    </script>
 
 </body>
 
