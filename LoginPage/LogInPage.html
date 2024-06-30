@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn into CodeChef</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+
+<body
+    class="bg-[url('./Media/Background.png')] bg-cover max-h-screen bg-no-repeat max-md:bg-[url(./Media/MobileBackground.png)]">
+
+    <div
+        class="mt-[10%] mx-[30%] mb-auto min-w-fit flex flex-col justify-center items-center p-8 rounded-[67px] bg-white
+    max-md:min-w-full max-md:m-0 max-md:mt-40 max-md:rounded-[10px] max-md:rounded-tl-[250px] max-sm:rounded-tl-[190px]">
+
+        <div class="logo">
+            <img src="./Media/logo.png" alt="CodeChef logo" class="max-w-full block min-w-[10%]">
+        </div>
+
+        <h1 class="Login block uppercase text-[#569CEE] text-2xl transform  font-roboto">
+            login
+        </h1>
+
+        <form action="./LoggedIn.html" class="block">
+
+            <div class="input-group block py-2">
+                <label for="email" class="font-bold">Email ID</label><br>
+
+                <div
+                    class="min-w-80 border border-black border-solid rounded-[8px] flex align-baseline justify-between items-center overflow-hidden ">
+
+                    <img src="./Media/EmailLogo.png" alt="person icon"
+                        class="inline-flex max-w-full scale-50 min-w-[10%]">
+
+                    <input type="email" id="email" name="email" placeholder="some.mail@university.com"
+                        class="outline-none flex-grow" required>
+                </div>
+            </div>
+
+            <div class="input-group block py-2">
+                <label for="password" class="font-bold">Password</label><br>
+
+                <div class="min-w-80 border border-black border-solid rounded-[8px] flex align-baseline">
+                    <img src="./Media/VectorPasswordLogo.png" alt="lock logo"
+                        class="inline-block  scale-50 min-w-[10%]">
+                    <input type="password" id="password" name="password" placeholder="********"
+                        class="outline-none flex-grow" required>
+                    <img src="./Media/Eye.png" alt="eye logo"
+                        class="inline-block max-w-full scale-50 cursor-pointer min-w-[10%]">
+                </div>
+            </div>
+            <div class="flex flex-row justify-between text-[#0963CD] py-2">
+                <div class="rememberMe ">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Remember Me</label>
+                </div>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+            <button type="submit"
+                class="flexbox justify-center bg-[#569CEE] text-[#F7FBFF] py-2 my-5 min-w-full text-2xl rounded-[43px]">Log
+                in</button>
+        </form>
+        <div class="flex justify-between">
+            <div class="block -translate-x-16">Don't have an account?</div>
+            <a class="block translate-x-16 text-[#0963CD]"
+                href="./SignUpPage.html">Sign Up</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

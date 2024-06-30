@@ -1,0 +1,63 @@
+body {
+    margin: 7rem auto;
+    background: url(pexels-pixabay-531880.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-align: start;
+    color: #ffffff;
+}
+
+header h2 {
+    font-size: 1.5em;
+    color: #ff00d0;
+    text-align: start;
+    margin: 0;
+    padding: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 2px solid #ffffff;
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #000000;
+    color: #ffff00;
+    font-size: 1.2em;
+}
+
+td {
+    background-color: #333333;
+    color: #eeff00a2;
+    font-size: 1em;
+    padding: 20px;
+}
+
+footer {
+    background-color: #000000;
+    font-size: 1em;
+    margin-top: 30px;
+    display: inline-flex;
+    padding: 5px;
+    color: #ffff00;
+}
