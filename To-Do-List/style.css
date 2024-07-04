@@ -110,16 +110,10 @@ body{
     text-align: right;
     justify-content: right;
     cursor: pointer;
-    a{
-        text-decoration: none;
-        color: black;
-    }
     gap: 80px;
     transform: scale(40%);
     .first-arrow{
-        transform: rotate(0.5turn) translateY(4px);
-        color: #676767;
-        opacity: 50%;
+        transform: rotate(0.5turn) translateY(4px);    
     }
 }
 
@@ -169,7 +163,7 @@ button.dates-faded {
     color: #A8A8A8;
 }
 
-.calender button:hover{
+.calender button.today{
     background-color: #5ED3EC;
     color: white;
 }
