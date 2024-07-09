@@ -1,4 +1,4 @@
-:root{
+:root {
     --primarybackground: #36DBE5;
     --secondarybackground: #249EE3;
     --textbackground: #9AEDF2;
@@ -11,8 +11,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
-body{
-    display:flex; 
+body {
+    display: flex;
     min-height: 100%;
     min-width: 100%;
     margin: 0;
@@ -21,24 +21,27 @@ body{
 }
 
 /* SideBar CSS */
-.sidebar{
+.sidebar {
     background-color: var(--primarybackground);
     min-width: 40%;
     min-height: 100vh;
     font-family: 'Roboto';
 }
-.date{
+
+.date {
     text-align: right;
     color: white;
     width: 100%;
 }
-#date-in-box1{
+
+#date-in-box1 {
     display: flex;
     font-size: 80px;
     margin: 20px 0 0 20px;
     padding: 0px;
     justify-content: end;
 }
+
 #date-months {
     display: flex;
     font-size: 34%;
@@ -48,17 +51,18 @@ body{
     justify-content: center;
     text-transform: uppercase;
 }
-.heading{
+
+.heading {
     font-weight: 700;
     font-size: 120%;
     padding: 0;
     margin: 0 0 0 20px;
     color: var(--headingcolor);
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
-.sidebar li{
-    color:var(--textcolor);
+.sidebar li {
+    color: var(--textcolor);
     list-style: none;
     background-color: var(--textbackground);
     display: table;
@@ -70,15 +74,42 @@ body{
     overflow-wrap: normal;
 }
 
+.input {
+    margin-top: 10%;
+    display: flex;
+    fieldset {
+        border: none;
+        margin-left: 10%;
+        textarea {
+            background-color: #91e6ea;
+            padding-top: 5px;
+            width: 82%;
+        }
 
- 
-/* Calender CSS */
-.box2{
-    background-color: var(--secondarybackground);
-    min-width:60%;
+        button {
+            display: flex;
+            justify-content: center;
+            min-width: 83%;
+            background-color: #249EE3;
+            border: none;
+            color: white;
+            margin-top: 2px;
+            padding: 4px;
+            border-radius: 55px;
+
+        }
+    }
 }
 
-.calender{
+
+
+/* Calender CSS */
+.box2 {
+    background-color: var(--secondarybackground);
+    min-width: 60%;
+}
+
+.calender {
     margin: 18% auto;
     padding: 0px 20px 25px 20px;
     background-color: white;
@@ -88,7 +119,8 @@ body{
     justify-content: center;
     overflow: auto;
 }
-.heading-calender{
+
+.heading-calender {
     font-weight: 900;
     font-size: xx-large;
     display: flex;
@@ -96,8 +128,9 @@ body{
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-.month{
-    display:flex ;
+
+.month {
+    display: flex;
     font-family: 'Inter';
     flex-wrap: wrap;
     flex-direction: row;
@@ -105,24 +138,27 @@ body{
     justify-content: space-around;
     padding-left: 10%;
 }
-.arrow{
+
+.arrow {
     display: flex;
     text-align: right;
     justify-content: right;
     cursor: pointer;
     gap: 80px;
     transform: scale(40%);
-    .first-arrow{
-        transform: rotate(0.5turn) translateY(4px);    
+
+    .first-arrow {
+        transform: rotate(0.5turn) translateY(4px);
     }
 }
 
-.main-calender{
-    text-align:center ;
+.main-calender {
+    text-align: center;
     justify-content: center;
     margin: auto;
 }
-.weekdays{
+
+.weekdays {
     margin: 0;
     padding-right: 0px;
     font-weight: bolder;
@@ -131,16 +167,16 @@ body{
     grid-template-columns: repeat(7, 1fr);
 }
 
-.buttons{
+.buttons {
     margin: 0;
     transform: translate(8px);
     padding: 0px 10%;
-    display: grid ;
+    display: grid;
     grid-template-columns: repeat(7, 1fr);
 
 }
 
-.buttons button{
+.buttons button {
     margin: 0;
     border: solid 1px #D5D4DF;
     border-radius: 50%;
@@ -155,34 +191,40 @@ body{
     aspect-ratio: 1/1;
 }
 
-button.dates, button.dates-double{
+button.dates,
+button.dates-double {
     background-color: white;
 }
+
 button.dates-faded {
     background-color: #e1e4f0;
     color: #A8A8A8;
 }
 
-.calender button.today{
+.calender button.today {
     background-color: #5ED3EC;
     color: white;
 }
 
-.calender button:focus{
+.calender button:focus,
+.calender button.task-added {
     background-color: orange;
     color: white;
 }
+
 @media only screen and (max-width: 480px) {
-    body{
+    body {
         flex-direction: column;
     }
-    .sidebar{
+
+    .sidebar {
         width: 100%;
         /* height: 40%; */
         overflow-x: auto;
         overflow-y: auto;
     }
-    .box2{
+
+    .box2 {
         width: 100%;
         overflow: auto;
     }

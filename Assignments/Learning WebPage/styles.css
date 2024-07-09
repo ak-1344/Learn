@@ -1,0 +1,61 @@
+body{
+    background-image: url(background-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+h1{
+    color: blue;
+}
+img.logo{
+    max-width: 20rem;
+}
+td{
+    border: solid 1px white;
+    font-weight: bold;
+    a{
+        display: flex;
+        justify-content: center;
+    }
+}
+.heading{
+    font-size: 1.5rem;
+}
+ul{
+    list-style: square;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
